@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{block 'title'}}默认标题{{/block}}</title>
+    <link rel="shorycut icon" href="../favicon.ico" type="image/x-ion">
+    <!--引入初始化样式文件-->
+    <link rel="stylesheet" href="../../public/css/base.css">
+    {{block 'head'}}{{/block}}
+</head>
+<body>
+    {{include '../_partials/header.html'}}
+    {{block 'body'}}{{/block}}
+    {{include '../_partials/footer.html'}}
+<script src="../../public/js/jquery-3.4.1.js"></script>
+{{block 'script'}}{{/block}}
+</body>
+</html>

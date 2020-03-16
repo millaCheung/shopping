@@ -1,0 +1,84 @@
+{{extend './_layouts/home.html'}}
+{{block 'title'}}
+个人登录
+{{/block}}
+
+{{block 'head'}}
+<link rel="stylesheet" href="../public/css/login.css">
+{{/block}}
+
+{{block 'body'}}
+<div class="login-main">
+    <div class="w">
+        <div class="login-form">
+            <div class="login-form-style">
+                <a href="#" class="style1">扫描登陆</a>
+                <span>|</span>
+                <a href="#" class="style2 active">账户登陆</a>
+            </div>
+            <div class="remember">公共场所不建议自动登录，以免账号丢失</div>
+            <form class="login-list" id="login-list">
+                <div class="login-list-username login-list-common">
+                    <label>
+                        <input type="text" name="user" placeholder="手机号">
+                    </label>
+                    <span></span>
+                </div>
+                <div class="login-list-pwd login-list-common">
+                    <label>
+                        <input type="password" name="password">
+                    </label>
+                    <span></span>
+                </div>
+                <div class="login-list-check">
+                    <label for="">
+                        <input type="checkbox" name="check" id="">
+                        自动登录
+                    </label>
+                    <a href="#">忘记密码？</a>
+                </div>
+                <div class="login-list-submit">
+                    <button type="submit" id="submit">登 录</button>
+                </div>
+            </form>
+            <div class="login-others">
+                <span class="login-others-weibo"><a href="#">微博登录</a></span>
+                <span class="login-others-qq"><a href="#">QQ登录</a></span>
+                <span class="login-others-register"><a href="/register">立即注册</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}}
+
+{{block 'script'}}
+<script src="../public/js/login.js"></script>
+<script>
+    $(function () {
+        $("#submit").on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/login',
+                type: 'post',
+                data: $("#login-list").serialize(),
+                dataType: 'json',
+                success: function (data) {
+                    switch (data.err_code) {
+                        case 0:
+                            window.location.href = '/';
+                            break;
+                        case 1:
+                            window.alert('账号或密码错误');
+                            break;
+                        case 500:
+                            window.alert('服务器忙，请稍后重试！');
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            })
+        })
+    })
+</script>
+{{/block}}

@@ -1,0 +1,92 @@
+.header .sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    padding: 3px 0 0 14px;
+    border-left: 1px solid #c81523;
+}
+.header .sk img{
+    width: 50px;
+    height: 30px;
+}
+.nav {
+    overflow: hidden;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sk_con  {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.sk_con ul li:last-child a::after {
+    content: "\e904";
+    font-family: 'icomoon';
+}
+.sk_hd {
+    text-align: center;
+}
+.sk_bd {
+    margin-top: 30px;
+}
+.product_list {
+    width: 1210px;
+}
+.product_list .product_item {
+    float: left;
+    width: 230px;
+    height: 322px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+}
+.product_list .product_item:hover {
+    border: 1px solid #c81623;
+}
+.sk_bd .product_list .product_item a{
+    display: block;
+    width: 230px;
+    height: 264px;
+}
+
+.p_img {
+    width: 150px;
+    height: 150px;
+    margin: 30px 40px;
+}
+.p_name {
+    overflow: hidden;
+    height: 40px;
+    margin: 0 20px;
+    font-size: 14px;
+}
+.p_price {
+    margin: 0 20px;
+    color: #c81623;
+    font-size: 16px;
+}
+.p_icon {
+    font-size: 12px;
+}
+
+

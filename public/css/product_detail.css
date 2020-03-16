@@ -1,0 +1,398 @@
+.crumb-wrap {
+    padding: 13px 0 9px;
+}
+.crumb-wrap .item {
+    float: left;
+}
+.crumb-wrap .sep {
+    padding: 0 5px;
+}
+.crumb-wrap .ellipsis {
+    width: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-left {
+    float: left;
+}
+.product-left .magnifier {
+    width: 350px;
+    height: 350px;
+}
+.magnifier .left {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    border: 1px solid #ddd;
+}
+.magnifier .left img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.magnifier .left .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.magnifier .left .float {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    background: #f00;
+    opacity: 0.5;
+    display: none;
+}
+.magnifier .right {
+    display: none;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ddd;
+    background: url("../upload/huawei_charge.png") no-repeat;
+    background-size: 700px 700px;
+    transform: translateX(350px) translateY(-350px);
+    z-index: 100;
+}
+.product-right {
+    float: left;
+    margin-left: 40px;
+}
+.product-right .sku-name {
+    font: 700 16px Arial,"microsoft yahei";
+    color: #666;
+    padding-top: 10px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+.product-right .news {
+    color: #e4393c;
+    margin-bottom: 5px;
+}
+.product-right .news a {
+    color: #5e69ad;
+    text-decoration: underline;
+}
+.product-right .activity-banner {
+    height: 32px;
+    padding: 0 10px;
+    line-height: 32px;
+    font-family: "microsoft yahei", serif;
+    background: linear-gradient(to right, #f42e90, #ff0b5b);
+}
+.product-right .activity-banner .activity-type {
+    float: left;
+}
+.product-right .activity-banner .activity-type i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../images/__sprite.png") no-repeat -20px 0;
+    vertical-align: -4px;
+}
+.product-right .activity-banner .activity-type strong {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.product-right .activity-banner .activity-message {
+    float: right;
+    color: #fbe2e2;
+    font-size: 12px;
+}
+.product-right .activity-banner .activity-message span {
+    display: inline-block;
+    width: 22px;
+    margin: 0 4px;
+    background-color: #443b3b;
+    line-height: 24px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+}
+.summary-first {
+    position: relative;
+    padding-top: 10px;
+    background-color: #f3f3f3;
+}
+.summary-first .summary-price {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.summary-first .summary-price .dt {
+    float: left;
+    padding-left: 10px;
+    line-height: 22px;
+    color: #999;
+    font-family: simsun, serif;
+}
+.summary-first .summary-price .dd {
+    padding-left: 70px;
+     line-height: 22px;
+}
+.summary-first .summary-price .dd .p-price {
+    margin-right: 10px;
+    color: #e4393c;
+    font-size: 22px;
+    font-family: "microsoft yahei", serif;
+}
+.summary-first .summary-price .dd .p-price span {
+    font-size: 16px;
+}
+.summary-first .summary-price .dd .notice {
+    color: #005aa0;
+    vertical-align: 2px;
+}
+.summary-first .summary-info {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    line-height: 15px;
+    border-left: 1px solid #e6e6e6;
+    padding: 0 10px;
+    color: #999;
+    text-align: center;
+    z-index: 1;
+}
+.summary-first .summary-info a {
+    color: #005ea7;
+    font-size: 14px;
+}
+.p-choose-wrap {
+    margin-bottom: 15px;
+}
+.p-choose-wrap .summary-stock .dt {
+    float: left;
+    padding-left: 10px;
+    margin-right: 5px;
+    color: #999;
+    font-family: simsun, serif;
+}
+.summary-stock .dd .store {
+    float: left;
+}
+.summary-stock .dd .store .stock-address {
+    position: relative;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 3px 25px 3px 4px;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.summary-stock .dd .store .stock-address span {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/59088392N8b6279bb.png") no-repeat 3px 5px;
+}
+.summary-stock .dd .store .stock-prompt {
+    float: left;
+    margin-right: 20px;
+    color: #999;
+}
+.summary-stock .dd .store .promise-icon-more {
+    float: left;
+}
+.summary-stock .dd .store .promise-icon-more .fl {
+    float: left;
+}
+.summary-stock .dd .store .promise-icon-more .services {
+    float: left;
+    padding: 0 10px;
+}
+.summary-stock .dd .store .promise-icon-more .services a {
+    color: #646fb0;
+    font-size: 12px;
+}
+.summary-stock .dd .store .promise-icon-more .services i {
+    padding: 0 8px;
+    color: #eaeaea;
+}
+.freight {
+    float: left;
+}
+.freight a span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/question.png");
+    vertical-align: middle;
+}
+.summary-supply {
+    padding-left: 64px;
+    padding-bottom: 10px;
+}
+.summary-supply span,
+.summary-supply a {
+    color: #e4393c;
+}
+.summary-supply b {
+    color: #999;
+}
+.choose-attrs {
+    width: 800px;
+    line-height: 40px;
+    margin-bottom: 7px;
+}
+.choose-attrs .dt,
+.choose-service .dt,
+.choose-baitiao .dt,
+.summary-tips .dt {
+    float: left;
+    padding-left: 10px;
+    color: #999;
+    font-family: simsun, serif;
+}
+.choose-attrs .dd,
+.choose-service .dd,
+.choose-baitiao .dd,
+.summary-tips .dd {
+    margin-left: 70px;
+}
+.choose-attrs .dd .item,
+.choose-service .dd .item,
+.choose-baitiao .dd .item {
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    color: #666;
+}
+.choose-attrs .dd .item a {
+    display: block;
+    border: 1px solid #ccc;
+}
+.choose-attrs .dd .item:hover a {
+    border: 1px solid #e3393e;
+    color: #666;
+}
+.choose-attrs .dd .item a img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.choose-attrs .dd .item a i {
+    margin: 0 8px;
+}
+.choose-service {
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+.choose-service .dt {
+    line-height: 30px;
+}
+.choose-service .dd .item {
+    padding: 4px 5px 4px 6px;
+    border: 1px solid #ccc;
+}
+.choose-service .dd .item i {
+    width: 15px;
+    height: 15px;
+}
+.summary-line {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px dotted #dfdfdf;
+    margin-bottom: 15px;
+}
+.choose-baitiao {
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.choose-baitiao .dt {
+    line-height: 30px;
+}
+.choose-baitiao .dd .item {
+    padding: 4px 5px 4px 6px;
+    border: 1px solid #ccc;
+}
+.choose-service .dd .item:hover,
+.choose-baitiao .dd .item:hover {
+    border: 1px solid #e3393e;
+    color: #666;
+}
+.choose-baitiao .dd .item strong {
+    font-weight: 400;
+}
+.choose-btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.choose-btn .choose-amount {
+    position: relative;
+    float: left;
+    width: 58px;
+    height: 44px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.choose-btn .choose-amount input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 42px;
+    line-height: 42;
+    text-align: center;
+}
+.choose-btn .choose-amount a {
+    display: block;
+    position: absolute;
+    right: -1px;
+    width: 15px;
+    height: 23px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    text-align: center;
+}
+.choose-btn .choose-amount .btn-add {
+    top: -1px;
+}
+.choose-btn .choose-amount .btn-sub {
+    bottom: -1px;
+}
+.choose-btn a.btn-addShopping {
+    float: left;
+    height: 46px;
+    padding: 0 26px;
+    background-color: #df3033;
+    color: #fff;
+    font: 700 18px/46px "microsoft yahei";
+}
+.summary-tips .dd i {
+    color: #999;
+}
+.detail {
+    width: 100%;
+    min-height: 200px;
+}
+.detail .detail-nav {
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #e4393c;
+}
+.detail .detail-nav ul li {
+    float: left;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.detail .detail-nav ul li.active {
+    background: #e4393c;
+    color: #fff;
+    cursor: default;
+}
